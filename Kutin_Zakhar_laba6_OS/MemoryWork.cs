@@ -38,7 +38,7 @@ namespace Muxanov_Kutin_laba6_OS
                 startIndex = moveToShMemory(newProcess);
                 if (startIndex == -1)
                 {
-                    Console.WriteLine("Невозможно добавить новый процесс, недостаточно памяти");
+                    Console.WriteLine("Not enough memory");
                     return;
                 }
                 for (int i = startIndex; i < startIndex + newProcess.size; i++)
